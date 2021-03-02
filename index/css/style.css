@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+label[for="bt_menu"]{
+    display: none;
+}
+
+#bt_menu{
+    display: none;
+}
+
+nav {
+    height: 8vh;
+    width: 100%;
+
+    background-color: black;
+}
+
+nav ul{
+    line-height: 8vh;
+    float: right;
+
+}
+
+nav ul li{
+    padding: 0px 10px;
+    list-style: none;
+    float: left;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+
+    font-family: 'Arial';
+    font-weight: bold;
+    color: #fff;
+}
+
+.content{
+    margin: 10px 50px;
+}
+
+.footer{
+    height: 8vh;
+    width: 100%;
+
+    line-height: 8vh;
+
+    background-color: black;
+    text-transform: capitalize;
+    font-family: 'Arial';
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}

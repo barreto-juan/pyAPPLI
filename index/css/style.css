@@ -43,6 +43,11 @@ nav ul li a{
     margin: 10px 50px;
 }
 
+.content #home{
+    display: flex;
+    justify-content: space-around;
+}
+
 .footer{
     height: 8vh;
     width: 100%;

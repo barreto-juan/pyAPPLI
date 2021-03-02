@@ -1,4 +1,4 @@
-## Site comercial
+## Site comercial (modelo one page)
 
- Site da empresa
+ Site da empresa J-Comp
  

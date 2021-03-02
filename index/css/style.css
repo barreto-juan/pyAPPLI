@@ -40,12 +40,31 @@ nav ul li a{
 }
 
 .content{
-    margin: 10px 50px;
 }
 
-.content #home{
+.content #home, .grid, #sobrenos, #contato{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    margin: 20px 0px 0px 0px;
+}
+
+.grid{
+    text-align: center;
+}
+
+.grid .foto img{
+    width: 100px;
+    height: 150px;
+}
+
+#contato{
+    padding: 50px;
+    background-color: coral;
+}
+#contato .enderecos, #contato .redessociais, #contato .nos{
+    width: 30%;
 }
 
 .footer{

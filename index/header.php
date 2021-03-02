@@ -16,8 +16,8 @@
         
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#sobrenos">Sobre nós</a></li>
-            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#servicos">Sobre nós</a></li>
+            <li><a href="#sobrenos">Serviços</a></li>
             <li><a href="#equipe">Equipe</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>

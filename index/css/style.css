@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 label[for="bt_menu"]{
     display: none;
 }
@@ -15,12 +19,22 @@ nav {
     height: 8vh;
     width: 100%;
 
-    background-color: black;
+    background-color: coral;
+}
+
+nav .logo{
+    line-height: 8vh;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin: 0px 0px 0px 50px;
 }
 
 nav ul{
     line-height: 8vh;
     float: right;
+
+    margin: 0px 50px 0px 0px;
 
 }
 
@@ -34,12 +48,12 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
 
-    font-family: 'Arial';
     font-weight: bold;
     color: #fff;
 }
 
 .content{
+    margin: 0px 50px;
 }
 
 .content #home, .grid, #sobrenos, #contato{
@@ -75,7 +89,6 @@ nav ul li a{
 
     background-color: black;
     text-transform: capitalize;
-    font-family: 'Arial';
     font-weight: bold;
     color: #fff;
     text-align: center;

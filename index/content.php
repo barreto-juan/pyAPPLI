@@ -1,5 +1,5 @@
 <div class="content">
-
+<!------------------------parte 1------------------------>
     <div id="home">
         
         <div class="texto">
@@ -16,7 +16,7 @@
         </div>
     
     </div>
-
+<!------------------------parte 2------------------------>
     <div id="servicos">
         
         <div class="grid">
@@ -37,7 +37,7 @@
         </div>
 
     </div>
-
+<!------------------------parte 3------------------------>
     <div id="sobrenos">
         <div class="foto">
             <div class="img">
@@ -53,7 +53,7 @@
         </div>
 
     </div>
-
+<!------------------------parte 4------------------------>
     <div id="equipe">
         
         <div class="grid">
@@ -78,6 +78,8 @@
 
     </div>
 
+</div>
+<!------------------------parte 5------------------------>
     <div id="contato">
         <div class="enderecos">
             <div class="local">
@@ -116,5 +118,3 @@
             <div class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed velit amet quisquam dolor vero! Saepe consectetur nihil aut tempora, magni eveniet velit dignissimos sunt unde accusantium nam officia obcaecati quos.</div>
         </div>
     </div>
-
-</div>

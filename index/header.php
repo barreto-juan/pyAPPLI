@@ -13,10 +13,11 @@
     <title>J - Comp | Início</title>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" name="" id="bt_menu">
-        <label for="bt_menu">&#9776;</label>
 
+    <input type="checkbox" name="" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    
+    <nav>
         <span class="logo">
             J-Comp
         </span>

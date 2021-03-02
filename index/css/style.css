@@ -54,16 +54,24 @@ nav ul li a{
     color: #fff;
 }
 
+nav ul li a:hover{
+    color: grey;
+}
+
 .content{
     margin: 0px 50px;
 }
 
+.content #home, #servicos, #sobrenos, #equipe{
+    margin: 50px 0px 0px 0px;
+}
+
 .content #home, .grid, #sobrenos, #contato{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
-    margin: 20px 0px 0px 0px;
 }
 
 .content #home .texto, #sobrenos .texto{
@@ -77,6 +85,10 @@ nav ul li a{
 .grid .foto img{
     width: 100px;
     height: 150px;
+}
+
+.space-grid{
+    margin: 10px;
 }
 
 #contato{

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-j-latin-key-512.png" type="image/x-icon">
 
     <title>J - Comp | Início</title>
 </head>

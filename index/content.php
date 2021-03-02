@@ -20,17 +20,32 @@
     <div id="servicos">
         
         <div class="grid">
-            <div id="s1">
+            <div class="space-grid" id="s1">
                 <div class="titulo">Lorem</div>
                 <div class="descricao">lorem lorem lorem</div>
             </div>
 
-            <div id="s2">
+            <div class="space-grid" id="s2">
                 <div class="titulo">Ipsum</div>
                 <div class="descricao">ipsum ipsum ipsum</div>
             </div>
 
-            <div id="s3">
+            <div class="space-grid" id="s3">
+                <div class="titulo">Dolor</div>
+                <div class="descricao">dolor dolor dolor</div>
+            </div>
+
+            <div class="space-grid" id="s4">
+                <div class="titulo">Lorem</div>
+                <div class="descricao">lorem lorem lorem</div>
+            </div>
+
+            <div class="space-grid" id="s5">
+                <div class="titulo">Ipsum</div>
+                <div class="descricao">ipsum ipsum ipsum</div>
+            </div>
+
+            <div class="space-grid" id="s6">
                 <div class="titulo">Dolor</div>
                 <div class="descricao">dolor dolor dolor</div>
             </div>
@@ -57,19 +72,19 @@
     <div id="equipe">
         
         <div class="grid">
-            <div id="i1">
+            <div class="space-grid" id="i1">
                 <div class="foto"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt=""></div>
                 <div class="titulo">Lorem</div>
                 <div class="descricao">lorem lorem lorem</div>
             </div>
 
-            <div id="i2">
+            <div class="space-grid" id="i2">
                 <div class="foto"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt=""></div>
                 <div class="titulo">Lorem</div>
                 <div class="descricao">lorem lorem lorem</div>
             </div>
 
-            <div id="i3">
+            <div class="space-grid" id="i3">
                 <div class="foto"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt=""></div>
                 <div class="titulo">Lorem</div>
                 <div class="descricao">lorem lorem lorem</div>
@@ -81,7 +96,7 @@
 </div>
 <!------------------------parte 5------------------------>
     <div id="contato">
-        <div class="enderecos">
+        <div class="space-grid" class="enderecos">
             <div class="local">
                 <div class="foto"><img src="" alt=""></div>
                 <div class="texto">Rua bassttiao</div>
@@ -97,7 +112,7 @@
         </div>
 
 
-        <div class="redessociais">
+        <div class="space-grid" class="redessociais">
             <div class="instagram">
                 <div class="foto"><img src="" alt=""></div>
                 <div class="texto"><a href="instagram.com/">instagram.com/</a></div>
@@ -113,7 +128,7 @@
         </div>
 
 
-        <div class="nos">
+        <div class="space-grid" class="nos">
             <div class="logo"><h1>J-Comp</h1></div>
             <div class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed velit amet quisquam dolor vero! Saepe consectetur nihil aut tempora, magni eveniet velit dignissimos sunt unde accusantium nam officia obcaecati quos.</div>
         </div>

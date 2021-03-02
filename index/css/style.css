@@ -19,7 +19,9 @@ nav {
     height: 8vh;
     width: 100%;
 
-    background-color: coral;
+    background-image: linear-gradient(45deg, lightgreen, lightblue);
+
+    box-shadow: 0rem 0rem 2rem 0rem;
 }
 
 nav .logo{
@@ -64,6 +66,10 @@ nav ul li a{
     margin: 20px 0px 0px 0px;
 }
 
+.content #home .texto, #sobrenos .texto{
+    width: 50%;
+}
+
 .grid{
     text-align: center;
 }
@@ -75,10 +81,25 @@ nav ul li a{
 
 #contato{
     padding: 50px;
-    background-color: coral;
+    background-image: linear-gradient(45deg, lightgreen, lightblue);
+
 }
+
+#contato a{
+    color: black;
+    text-decoration: none;
+}
+
 #contato .enderecos, #contato .redessociais, #contato .nos{
     width: 30%;
+}
+
+#contato .local:hover, #contato .whats:hover, #contato .email:hover {
+    color: #fff;
+}
+
+#contato .instagram a:hover, #contato .twitter a:hover, #contato .github a:hover {
+    color: #fff;
 }
 
 .footer{
@@ -87,9 +108,8 @@ nav ul li a{
 
     line-height: 8vh;
 
-    background-color: black;
-    text-transform: capitalize;
+    background-color: #fff;
+    text-transform: uppercase;
     font-weight: bold;
-    color: #fff;
     text-align: center;
 }

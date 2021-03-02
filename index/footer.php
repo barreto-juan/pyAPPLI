@@ -1,6 +1,6 @@
 <div class="footer">
     
-    &copy; Copyright 2021 J-Comp Todos Direitos Reservados
+    &copy; Copyright 2021 J-Comp | Todos os Direitos Reservados
 
 </div>
 

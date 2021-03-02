@@ -102,7 +102,7 @@
                 <div class="foto"><img src="" alt=""></div>
                 <div class="texto"><a href="instagram.com/">instagram.com/</a></div>
             </div>
-            <div class="twiter">
+            <div class="twitter">
                 <div class="foto"><img src="" alt=""></div>
                 <div class="texto"><a href="twitter.com/">twitter.com/</a></div>
             </div>
@@ -114,7 +114,7 @@
 
 
         <div class="nos">
-            <div class="foto"><img src="" alt=""></div>
+            <div class="logo"><h1>J-Comp</h1></div>
             <div class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed velit amet quisquam dolor vero! Saepe consectetur nihil aut tempora, magni eveniet velit dignissimos sunt unde accusantium nam officia obcaecati quos.</div>
         </div>
     </div>

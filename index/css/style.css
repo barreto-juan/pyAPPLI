@@ -116,6 +116,17 @@ nav ul li a:hover{
     margin: 10px;
 }
 
+.service{
+    background-color: lightgray;
+    border-radius: 4vh;
+
+    padding: 10px;
+}
+
+.service hr{
+    border: solid 1px #000;
+}
+
 .op{
     font-family: 'Shippori Mincho', serif;
     font-weight: bold;

@@ -21,33 +21,39 @@
 
     <div id="servicos">
         <div class="grid">
-            <div class="space-grid" id="s1">
+            <div class="space-grid service" id="s1">
                 <div class="titulo">Lorem</div>
+                <hr>
                 <div class="descricao">lorem lorem lorem</div>
             </div>
 
-            <div class="space-grid" id="s2">
+            <div class="space-grid service" id="s2">
                 <div class="titulo">Ipsum</div>
+                <hr>
                 <div class="descricao">ipsum ipsum ipsum</div>
             </div>
 
-            <div class="space-grid" id="s3">
+            <div class="space-grid service" id="s3">
                 <div class="titulo">Dolor</div>
+                <hr>
                 <div class="descricao">dolor dolor dolor</div>
             </div>
 
-            <div class="space-grid" id="s4">
+            <div class="space-grid service" id="s4">
                 <div class="titulo">Lorem</div>
+                <hr>
                 <div class="descricao">lorem lorem lorem</div>
             </div>
 
-            <div class="space-grid" id="s5">
+            <div class="space-grid service" id="s5">
                 <div class="titulo">Ipsum</div>
+                <hr>
                 <div class="descricao">ipsum ipsum ipsum</div>
             </div>
 
-            <div class="space-grid" id="s6">
+            <div class="space-grid service" id="s6">
                 <div class="titulo">Dolor</div>
+                <hr>
                 <div class="descricao">dolor dolor dolor</div>
             </div>
         </div>

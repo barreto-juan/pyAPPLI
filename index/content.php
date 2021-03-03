@@ -86,23 +86,29 @@
     <h1 class="op" id="equipe">Nossa Equipe</h1>
     <div class="equipe">
         <div class="grid">
-            <div class="space-grid" id="i1">
-                <div class="foto"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt=""></div>
-                <div class="titulo">Lorem</div>
-                <div class="descricao">lorem lorem lorem</div>
-            </div>
+            <?php
+				$sql = mysqli_query($conn, "SELECT * FROM equipe");
+				$exibe = mysqli_fetch_assoc($sql);
 
-            <div class="space-grid" id="i2">
-                <div class="foto"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt=""></div>
-                <div class="titulo">Lorem</div>
-                <div class="descricao">lorem lorem lorem</div>
-            </div>
+				while($exibe = mysqli_fetch_assoc($sql)) {
+					echo "
+					
+						<div class='space-grid'>
+						
+							<div class='cols col1'>
+								<div class='imgp'> <img src=" .$exibe['foto']. "></div>
+							</div>
 
-            <div class="space-grid" id="i3">
-                <div class="foto"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt=""></div>
-                <div class="titulo">Lorem</div>
-                <div class="descricao">lorem lorem lorem</div>
-            </div>
+							<div class='cols col2'>
+								<div class='nome'>" .$exibe['nome']. "</div>
+								<div class='cargo'>" .$exibe['cargo']. "</div>
+							</div>
+								
+						</div>
+						
+					";
+				}
+			?>
         </div>
 
     </div>

@@ -11,7 +11,7 @@
 
         <div class="foto">
             <div class="img">
-                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt="">
+                <img src="img/212005.jpg" width="500px" alt="">
             </div>
         </div>
     
@@ -98,7 +98,7 @@
 </div>
 <!------------------------parte 5------------------------>
     <div id="contato">
-        <div class="space-grid" class="enderecos">
+        <div class="space-grid enderecos">
             <div class="local">
                 <div class="foto"><img src="" alt=""></div>
                 <div class="texto">Rua bassttiao</div>
@@ -114,7 +114,7 @@
         </div>
 
 
-        <div class="space-grid" class="redessociais">
+        <div class="space-grid redessociais">
             <div class="instagram">
                 <div class="foto"><img src="" alt=""></div>
                 <div class="texto"><a href="instagram.com/">instagram.com/</a></div>
@@ -130,7 +130,7 @@
         </div>
 
 
-        <div class="space-grid" class="nos">
+        <div class="space-grid nos">
             <div class="logo"><h1>J-Comp</h1></div>
             <div class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed velit amet quisquam dolor vero! Saepe consectetur nihil aut tempora, magni eveniet velit dignissimos sunt unde accusantium nam officia obcaecati quos.</div>
         </div>

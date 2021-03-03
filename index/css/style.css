@@ -34,7 +34,7 @@ nav {
     height: 8vh;
     width: 100%;
 
-    background-image: linear-gradient(45deg, lightgreen, lightblue);
+    background-image: linear-gradient(45deg, #ec78b3, #a385e9);
 
     box-shadow: 0rem 0rem 2rem 0rem;
 
@@ -114,12 +114,12 @@ nav ul li a:hover{
 
 .op{
     font-family: 'Shippori Mincho', serif;
+    font-weight: bold;
 }
 
 #contato{
-    padding: 50px;
-    background-image: linear-gradient(45deg, lightgreen, lightblue);
-
+    padding: 20px;
+    background-image: linear-gradient(45deg, #ec78b3, #a385e9);
 }
 
 #contato a{
@@ -136,6 +136,10 @@ nav ul li a:hover{
 }
 
 #contato .instagram a:hover, #contato .twitter a:hover, #contato .github a:hover {
+    color: #fff;
+}
+
+#contato .nos{
     color: #fff;
 }
 
@@ -190,5 +194,10 @@ nav ul li a:hover{
         height: 55vh;
 
         transition: all ease-in-out .4s;
+    }
+
+    #contato{
+        display: flex;
+        flex-direction: column;
     }
 }

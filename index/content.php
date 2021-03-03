@@ -25,36 +25,42 @@
                 <div class="titulo">Lorem</div>
                 <hr>
                 <div class="descricao">lorem lorem lorem</div>
+                <button disabled="disabled">Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s2">
                 <div class="titulo">Ipsum</div>
                 <hr>
                 <div class="descricao">ipsum ipsum ipsum</div>
+                <button disabled="disabled">Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s3">
                 <div class="titulo">Dolor</div>
                 <hr>
                 <div class="descricao">dolor dolor dolor</div>
+                <button disabled="disabled">Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s4">
                 <div class="titulo">Lorem</div>
                 <hr>
                 <div class="descricao">lorem lorem lorem</div>
+                <button disabled="disabled">Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s5">
                 <div class="titulo">Ipsum</div>
                 <hr>
                 <div class="descricao">ipsum ipsum ipsum</div>
+                <button disabled="disabled">Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s6">
                 <div class="titulo">Dolor</div>
                 <hr>
                 <div class="descricao">dolor dolor dolor</div>
+                <button disabled="disabled">Ver serviço</button>
             </div>
         </div>
 

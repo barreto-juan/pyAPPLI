@@ -127,6 +127,18 @@ nav ul li a:hover{
     border: solid 1px #000;
 }
 
+.service button{
+    background-color: #a385e9;
+    padding: 10px;
+    border-radius: 20px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.service
+
 .op{
     font-family: 'Shippori Mincho', serif;
     font-weight: bold;

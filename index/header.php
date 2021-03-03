@@ -14,7 +14,7 @@
     
     <link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-j-latin-key-512.png" type="image/x-icon">
 
-    <title>J - Comp | Início</title>
+    <title>J - Comp | Soluções Tecnológicas</title>
 </head>
 <body>
 

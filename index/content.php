@@ -17,57 +17,57 @@
     
     </div>
 <!------------------------parte 2------------------------>
-    <h1 class="op">Nossos Serviços</h1>
+    <h1 class="op" id="servicos">Nossos Serviços</h1>
 
-    <div id="servicos">
+    <div class="servicos">
         <div class="grid">
             <div class="space-grid service" id="s1">
                 <div class="titulo">Lorem</div>
                 <hr>
                 <div class="descricao">lorem lorem lorem</div>
-                <button disabled="disabled">Ver serviço</button>
+                <button enabled>Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s2">
                 <div class="titulo">Ipsum</div>
                 <hr>
                 <div class="descricao">ipsum ipsum ipsum</div>
-                <button disabled="disabled">Ver serviço</button>
+                <button enabled>Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s3">
                 <div class="titulo">Dolor</div>
                 <hr>
                 <div class="descricao">dolor dolor dolor</div>
-                <button disabled="disabled">Ver serviço</button>
+                <button enabled>Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s4">
                 <div class="titulo">Lorem</div>
                 <hr>
                 <div class="descricao">lorem lorem lorem</div>
-                <button disabled="disabled">Ver serviço</button>
+                <button enabled>Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s5">
                 <div class="titulo">Ipsum</div>
                 <hr>
                 <div class="descricao">ipsum ipsum ipsum</div>
-                <button disabled="disabled">Ver serviço</button>
+                <button enabled>Ver serviço</button>
             </div>
 
             <div class="space-grid service" id="s6">
                 <div class="titulo">Dolor</div>
                 <hr>
                 <div class="descricao">dolor dolor dolor</div>
-                <button disabled="disabled">Ver serviço</button>
+                <button enabled>Ver serviço</button>
             </div>
         </div>
 
     </div>
 <!------------------------parte 3------------------------>
-    <h1 class="op" >Sobre Nós</h1>
-    <div id="sobrenos">
+    <h1 class="op" id="sobrenos">Sobre Nós</h1>
+    <div class="sobrenos">
         <div class="foto">
             <div class="img">
                 <img src="img/2231.jpg" height="312.75px" width="469.5px" style="margin-right: 15px;" alt="">
@@ -83,8 +83,8 @@
 
     </div>
 <!------------------------parte 4------------------------>
-    <h1 class="op" >Nossa Equipe</h1>
-    <div id="equipe">
+    <h1 class="op" id="equipe">Nossa Equipe</h1>
+    <div class="equipe">
         <div class="grid">
             <div class="space-grid" id="i1">
                 <div class="foto"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt=""></div>

@@ -87,11 +87,11 @@ nav ul li a:hover{
     margin: 50px 0px;
 }
 
-.content #servicos, #sobrenos, #equipe{
+.content .servicos, .sobrenos, .equipe{
     margin: 0px 0px 50px 0px;
 }
 
-.content #home, .grid, #sobrenos, #contato{
+.content #home, .grid, .sobrenos, #contato{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@ nav ul li a:hover{
 
 }
 
-.content #home .texto, #sobrenos .texto{
+.content #home .texto, .sobrenos .texto{
     width: 50%;
 }
 
@@ -123,6 +123,10 @@ nav ul li a:hover{
     padding: 10px;
 }
 
+.service:hover{
+    box-shadow: 0rem 0rem .8rem 0rem;
+}
+
 .service hr{
     border: solid 1px #000;
 }
@@ -131,13 +135,31 @@ nav ul li a:hover{
     background-color: #a385e9;
     padding: 10px;
     border-radius: 20px;
+    border: none;
 
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-size: 15px;
+    /*font-weight: bold;*/
     color: #fff;
+
+    cursor: pointer;
+    outline: 0;
+
+    transition: all .4s;
 }
 
-.service
+.service button:enabled:hover{
+    padding: 10px 25px;
+
+    background-color: #fff;
+    color: #a385e9;
+
+    transition: all .4s;
+}
+
+.service button:disabled{
+    cursor: not-allowed;
+}
 
 .op{
     font-family: 'Shippori Mincho', serif;

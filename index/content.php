@@ -17,8 +17,9 @@
     
     </div>
 <!------------------------parte 2------------------------>
+    <h1 class="op">Nossos Serviços</h1>
+
     <div id="servicos">
-        
         <div class="grid">
             <div class="space-grid" id="s1">
                 <div class="titulo">Lorem</div>
@@ -53,6 +54,7 @@
 
     </div>
 <!------------------------parte 3------------------------>
+    <h1 class="op" >Sobre Nós</h1>
     <div id="sobrenos">
         <div class="foto">
             <div class="img">
@@ -69,8 +71,8 @@
 
     </div>
 <!------------------------parte 4------------------------>
+    <h1 class="op" >Nossa Equipe</h1>
     <div id="equipe">
-        
         <div class="grid">
             <div class="space-grid" id="i1">
                 <div class="foto"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt=""></div>

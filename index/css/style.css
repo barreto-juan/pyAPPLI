@@ -79,8 +79,12 @@ nav ul li a:hover{
     margin: 0px 50px;
 }
 
-.content #home, #servicos, #sobrenos, #equipe{
-    margin: 50px 0px 0px 0px;
+.content #home{
+    margin: 50px 0px;
+}
+
+.content #servicos, #sobrenos, #equipe{
+    margin: 0px 0px 50px 0px;
 }
 
 .content #home, .grid, #sobrenos, #contato{
@@ -106,6 +110,10 @@ nav ul li a:hover{
 
 .space-grid{
     margin: 10px;
+}
+
+.op{
+    font-family: 'Shippori Mincho', serif;
 }
 
 #contato{

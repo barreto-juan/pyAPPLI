@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,8 +28,8 @@
         
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#servicos">Sobre nós</a></li>
-            <li><a href="#sobrenos">Serviços</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobrenos">Sobre Nós</a></li>
             <li><a href="#equipe">Equipe</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>

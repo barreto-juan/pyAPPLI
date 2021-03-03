@@ -139,8 +139,21 @@ nav ul li a:hover{
     color: #fff;
 }
 
+#contato .local, #contato .whats, #contato .email, #contato .instagram, #contato .twitter, #contato .github{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 #contato .nos{
     color: #fff;
+}
+
+#contato .enderecos .foto img, #contato .redessociais .foto img{
+    width: 40px;
+    height: 40px;
+
+    margin: 5px;
 }
 
 .footer{

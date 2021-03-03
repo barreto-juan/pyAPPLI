@@ -100,15 +100,15 @@
     <div id="contato">
         <div class="space-grid enderecos">
             <div class="local">
-                <div class="foto"><img src="" alt=""></div>
-                <div class="texto">Rua bassttiao</div>
+                <div class="foto"><img src="img/local.png" alt="" style="width: 35px;"></div>
+                <div class="texto">Rua Jubiscleuda, 7070<br>Somewhere/AO</div>
             </div>
             <div class="whats">
-                <div class="foto"><img src="" alt=""></div>
-                <div class="texto">(35) 98765-4321</div>
+                <div class="foto"><img src="img/whatsapp.png" alt=""></div>
+                <div class="texto">+55 35 9 8765-4321</div>
             </div>
             <div class="email">
-                <div class="foto"><img src="" alt=""></div>
+                <div class="foto"><img src="img/email.png" alt="" style="width: 50px;"></div>
                 <div class="texto">contato@gmail.com</div>
             </div>
         </div>
@@ -116,15 +116,15 @@
 
         <div class="space-grid redessociais">
             <div class="instagram">
-                <div class="foto"><img src="" alt=""></div>
+                <div class="foto"><img src="img/instagram.png" alt=""></div>
                 <div class="texto"><a href="instagram.com/">instagram.com/</a></div>
             </div>
             <div class="twitter">
-                <div class="foto"><img src="" alt=""></div>
+                <div class="foto"><img src="img/twitter.png" alt=""></div>
                 <div class="texto"><a href="twitter.com/">twitter.com/</a></div>
             </div>
             <div class="github">
-                <div class="foto"><img src="" alt=""></div>
+                <div class="foto"><img src="img/github.png" alt=""></div>
                 <div class="texto"><a href="github.com/">github.com/</a></div>
             </div>
         </div>

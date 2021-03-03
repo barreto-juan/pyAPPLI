@@ -48,20 +48,6 @@
                 <div class="descricao">lorem lorem lorem</div>
                 <button enabled>Ver serviço</button>
             </div>
-
-            <div class="space-grid service" id="s5">
-                <div class="titulo">Ipsum</div>
-                <hr>
-                <div class="descricao">ipsum ipsum ipsum</div>
-                <button enabled>Ver serviço</button>
-            </div>
-
-            <div class="space-grid service" id="s6">
-                <div class="titulo">Dolor</div>
-                <hr>
-                <div class="descricao">dolor dolor dolor</div>
-                <button enabled>Ver serviço</button>
-            </div>
         </div>
 
     </div>
@@ -136,15 +122,15 @@
         <div class="space-grid redessociais">
             <div class="instagram">
                 <div class="foto"><img src="img/instagram.png" alt=""></div>
-                <div class="texto"><a href="instagram.com/">instagram.com/</a></div>
+                <div class="texto"><a href="https://instagram.com/" target="_blank">instagram.com/</a></div>
             </div>
             <div class="twitter">
                 <div class="foto"><img src="img/twitter.png" alt=""></div>
-                <div class="texto"><a href="twitter.com/">twitter.com/</a></div>
+                <div class="texto"><a href="https://twitter.com/" target="_blank">twitter.com/</a></div>
             </div>
             <div class="github">
                 <div class="foto"><img src="img/github.png" alt=""></div>
-                <div class="texto"><a href="github.com/">github.com/</a></div>
+                <div class="texto"><a href="https://github.com/" target="_blank">github.com/</a></div>
             </div>
         </div>
 

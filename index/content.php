@@ -58,7 +58,7 @@
     <div id="sobrenos">
         <div class="foto">
             <div class="img">
-                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/02/Homer_Simpson_2006.png/200px-Homer_Simpson_2006.png" alt="">
+                <img src="img/2231.jpg" height="312.75px" width="469.5px" style="margin-right: 15px;" alt="">
             </div>
         </div>
 

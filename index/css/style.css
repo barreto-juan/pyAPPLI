@@ -31,7 +31,7 @@ label[for="bt_menu"]{
 }
 
 nav {
-    height: 8vh;
+    height: 10vh;
     width: 100%;
 
     background-image: linear-gradient(45deg, #ec78b3, #a385e9);
@@ -42,7 +42,7 @@ nav {
 }
 
 nav .logo{
-    line-height: 8vh;
+    line-height: 10vh;
     font-weight: bold;
     font-size: 30px;
     color: #fff;
@@ -50,7 +50,7 @@ nav .logo{
 }
 
 nav ul{
-    line-height: 8vh;
+    line-height: 10vh;
     float: right;
 
     margin: 0px 50px 0px 0px;
@@ -69,10 +69,14 @@ nav ul li a{
 
     font-weight: bold;
     color: #fff;
+
+    transition: all .4s;
 }
 
 nav ul li a:hover{
     color: grey;
+
+    transition: all .4s;
 }
 
 .content{

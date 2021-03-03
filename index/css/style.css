@@ -118,7 +118,7 @@ nav ul li a:hover{
 
 .service{
     background-color: lightgray;
-    border-radius: 4vh;
+    border-radius: 20px;
 
     padding: 10px;
 }
@@ -165,6 +165,20 @@ nav ul li a:hover{
     font-family: 'Shippori Mincho', serif;
     font-weight: bold;
 }
+
+.equipe .grid .space-grid{
+    padding: 10px;
+
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.equipe .grid .space-grid img{
+    border-radius: 50%;
+}
+
+
+
 
 #contato{
     padding: 20px;

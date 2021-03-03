@@ -101,6 +101,7 @@
 
 							<div class='cols col2'>
 								<div class='nome'>" .$exibe['nome']. "</div>
+                                <hr style='border: 1px solid;'>
 								<div class='cargo'>" .$exibe['cargo']. "</div>
 							</div>
 								

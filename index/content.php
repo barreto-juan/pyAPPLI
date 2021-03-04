@@ -21,33 +21,23 @@
 
     <div class="servicos">
         <div class="grid">
-            <div class="space-grid service" id="s1">
-                <div class="titulo">Lorem</div>
-                <hr>
-                <div class="descricao">lorem lorem lorem</div>
-                <button enabled>Ver serviço</button>
-            </div>
+            <?php
+                $sql = mysqli_query($conn, "SELECT * FROM servicos");
+                $exibe = mysqli_fetch_assoc($sql);
 
-            <div class="space-grid service" id="s2">
-                <div class="titulo">Ipsum</div>
-                <hr>
-                <div class="descricao">ipsum ipsum ipsum</div>
-                <button enabled>Ver serviço</button>
-            </div>
-
-            <div class="space-grid service" id="s3">
-                <div class="titulo">Dolor</div>
-                <hr>
-                <div class="descricao">dolor dolor dolor</div>
-                <button enabled>Ver serviço</button>
-            </div>
-
-            <div class="space-grid service" id="s4">
-                <div class="titulo">Lorem</div>
-                <hr>
-                <div class="descricao">lorem lorem lorem</div>
-                <button enabled>Ver serviço</button>
-            </div>
+                while ($exibe = mysqli_fetch_assoc($sql)) {
+                    echo "
+                        <div class='service' id='s" .$exibe['id']. "'>
+                            <div class='titulo'>" .$exibe['nome']. "</div>
+                            <div class='descricao'>" .$exibe['descricao']. "</div>
+                            <hr>
+                            <div class='preco'> R$ " . number_format($exibe['preco'], 2, ',', '.'). "</div>
+                            <button " .$exibe['disp']. ">Ver orçamento</button>
+                        </div>
+                    ";
+                }
+            
+            ?>
         </div>
 
     </div>
@@ -136,7 +126,7 @@
 
 
         <div class="space-grid nos">
-            <div class="logo"><h1>J-Comp</h1></div>
+            <div class="logo"><h1>Jinfo</h1></div>
             <div class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed velit amet quisquam dolor vero! Saepe consectetur nihil aut tempora, magni eveniet velit dignissimos sunt unde accusantium nam officia obcaecati quos.</div>
         </div>
     </div>

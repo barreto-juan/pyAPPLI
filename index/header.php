@@ -14,7 +14,7 @@
     
     <link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-j-latin-key-512.png" type="image/x-icon">
 
-    <title>J - Comp | Soluções Tecnológicas</title>
+    <title>Jinfo | Soluções em Informática</title>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
     
     <nav>
         <span class="logo">
-            J-Comp
+            Jinfo
         </span>
         
         <ul>

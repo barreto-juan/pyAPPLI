@@ -117,23 +117,36 @@ nav ul li a:hover{
 }
 
 .service{
-    background-color: lightgray;
-    border-radius: 20px;
+    background-color: #eaeaea;
 
-    padding: 10px;
+    width: 300px;
+    height: auto;
+
+    margin: 20px 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.service:hover{
-    box-shadow: 0rem 0rem .8rem 0rem;
+.service .titulo{
+    background-color: #a385e9;
+    color: #fff;
+    padding: 10px 0px;
+    width: 300px;
 }
 
 .service hr{
     border: solid 1px #000;
+    width: 80%;
+    margin: 10px 0px;
 }
 
 .service button{
+
     background-color: #a385e9;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
     border: none;
 
@@ -149,7 +162,7 @@ nav ul li a:hover{
 }
 
 .service button:enabled:hover{
-    padding: 10px 25px;
+    padding: 10px 30px;
 
     background-color: #fff;
     color: #a385e9;
@@ -159,6 +172,8 @@ nav ul li a:hover{
 
 .service button:disabled{
     cursor: not-allowed;
+
+    background-color: #838383;
 }
 
 .op{
@@ -175,6 +190,7 @@ nav ul li a:hover{
 
 .equipe .grid .space-grid img{
     border-radius: 50%;
+    width: 150px;
 }
 
 

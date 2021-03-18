@@ -11,13 +11,13 @@
 
         <div class="foto">
             <div class="img">
-                <img src="img/212005.jpg" width="500px" alt="">
+                <img src="img/212005.jpg" width="400px" alt="">
             </div>
         </div>
     
     </div>
 <!------------------------parte 2------------------------>
-    <h1 class="op" id="servicos">Nossos Serviços</h1>
+    <h1 class="op" id="servicos">Conheça nossos serviços</h1>
 
     <div class="servicos">
         <div class="grid">
@@ -42,11 +42,11 @@
 
     </div>
 <!------------------------parte 3------------------------>
-    <h1 class="op" id="sobrenos">Sobre Nós</h1>
+    <h1 class="op" id="sobrenos">Saiba um pouco sobre nós</h1>
     <div class="sobrenos">
         <div class="foto">
             <div class="img">
-                <img src="img/2231.jpg" height="312.75px" width="469.5px" style="margin-right: 15px;" alt="">
+                <img src="img/2231.jpg" height="250px" width="400px" style="margin-right: 15px;" alt="">
             </div>
         </div>
 
@@ -59,39 +59,43 @@
 
     </div>
 <!------------------------parte 4------------------------>
-    <h1 class="op" id="equipe">Nossa Equipe</h1>
-    <div class="equipe">
-        <div class="grid">
-            <?php
-				$sql = mysqli_query($conn, "SELECT * FROM equipe");
-				$exibe = mysqli_fetch_assoc($sql);
+    <h1 class="op" id="clientes">Opiniões de clientes</h1>
+</div>
 
-				while($exibe = mysqli_fetch_assoc($sql)) {
-					echo "
-					
-						<div class='space-grid'>
-						
-							<div class='cols col1'>
-								<div class='imgp'> <img src=" .$exibe['foto']. "></div>
-							</div>
-
-							<div class='cols col2'>
-								<div class='nome'>" .$exibe['nome']. "</div>
-                                <hr style='border: 1px solid;'>
-								<div class='cargo'>" .$exibe['cargo']. "</div>
-							</div>
-								
-						</div>
-						
-					";
-				}
-			?>
-        </div>
-
+    <div class="slide-carousel">
+        <span class="out"><h1>rafael</h1> <br> <p>sprinter</p></span>
+        <span class="out"><h1>donatelo</h1> <br> <p>michellangelo</p></span>
+        <span class="out"><h1>pink</h1> <br> <p>brain</p></span>
     </div>
 
-</div>
 <!------------------------parte 5------------------------>
+    <div class="content">    
+        <h1 class="op" id="equipe">Conheça nossa equipe</h1>
+        <div class="equipe">
+            <div class="grid">
+                <?php
+                    $sql = mysqli_query($conn, "SELECT * FROM equipe");
+                    $exibe = mysqli_fetch_assoc($sql);
+
+                    while($exibe = mysqli_fetch_assoc($sql)){
+                        echo "
+                            <div class='integrante' id='e" . $exibe['id'] . "'>
+                                <img src=\"" . $exibe['foto'] . "\"/>
+                                
+                                <div class='section'>
+                                    <div class='nome'>" . $exibe['nome']. "</div>
+                                    <hr>
+                                    <div class='cargo'>" . $exibe['cargo'] . "</div>
+                                </div>
+                            </div>
+                        ";
+                    }
+
+                ?>
+            </div>
+        </div>
+    </div>
+<!------------------------parte 6------------------------>
     <div id="contato">
         <div class="space-grid enderecos">
             <div class="local">
@@ -104,7 +108,7 @@
             </div>
             <div class="email">
                 <div class="foto"><img src="img/email.png" alt="" style="width: 50px;"></div>
-                <div class="texto">contato@gmail.com</div>
+                <div class="texto">contato@jinfo.epizy.com</div>
             </div>
         </div>
 

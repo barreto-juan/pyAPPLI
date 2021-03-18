@@ -14,6 +14,9 @@
     
     <link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-j-latin-key-512.png" type="image/x-icon">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
     <title>Jinfo | Soluções em Informática</title>
 </head>
 <body>
@@ -28,9 +31,13 @@
         
         <ul>
             <li><a href="#home">Home</a></li>
+            <hr class="lista">
             <li><a href="#servicos">Serviços</a></li>
+            <hr class="lista">
             <li><a href="#sobrenos">Sobre Nós</a></li>
+            <hr class="lista">
             <li><a href="#equipe">Equipe</a></li>
+            <hr class="lista">
             <li><a href="#contato">Contato</a></li>
         </ul>
     

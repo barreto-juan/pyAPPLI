@@ -1,4 +1,4 @@
 ## Site comercial (modelo one page)
 
- Site da empresa J-Comp
+ Site para a empresa Jinfo | Soluções em Informática
  

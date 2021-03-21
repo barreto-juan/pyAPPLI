@@ -3,27 +3,26 @@
     <div id="home">
         
         <div class="texto">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem molestias error, quam illum earum atque vero tempora??</p>
+            <h1>Bem-vindo à Jinfo! &#x1F603;</h1>
+            <p>Nossa empresa foi criada a fim de solucionar problemas no quisito informática!</p>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque magni. Molestias, inventore necessitatibus?</p>
+            <p>Confira abaixo nossos serviços e conheça-nos um pouco, qualquer dúvida contate-nos por nossos canais sociais ou pelo nosso formulário de contato.</p>
         </div>
 
         <div class="foto">
             <div class="img">
-                <img src="img/212005.jpg" width="400px" alt="">
+                <img src="img/icone-site.png" width="400px" alt="">
             </div>
         </div>
     
     </div>
 <!------------------------parte 2------------------------>
-    <h1 class="op" id="servicos">Conheça nossos serviços</h1>
+    <h1 class="op" id="servicos">Conheça nossos serviços 💻&#x1F527;</h1>
 
     <div class="servicos">
         <div class="grid">
             <?php
                 $sql = mysqli_query($conn, "SELECT * FROM servicos");
-                $exibe = mysqli_fetch_assoc($sql);
 
                 while ($exibe = mysqli_fetch_assoc($sql)) {
                     echo "
@@ -42,7 +41,7 @@
 
     </div>
 <!------------------------parte 3------------------------>
-    <h1 class="op" id="sobrenos">Saiba um pouco sobre nós</h1>
+    <h1 class="op" id="sobrenos">Um pouco sobre nós</h1>
     <div class="sobrenos">
         <div class="foto">
             <div class="img">
@@ -51,10 +50,18 @@
         </div>
 
         <div class="texto">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem molestias error, quam illum earum atque vero tempora??</p>
+            <h2>Missão</h2>
+            <p>Existimos a fim de oferecer um serviço de qualidade com um preço acessível ao cliente!</p>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque magni. Molestias, inventore necessitatibus?</p>
+            <h2>Visão</h2>
+            <p>Nossa visão trabalha em crescermos e oferecermos mais serviços, com uma qualidade superior e com um preço ainda mais acessível!</p>
+            <br>
+            <h2>Valores</h2>
+            <p>
+                - Integridade; <br>
+                - Honestidade. <br>
+                Trabalhamos com integridade, buscamos a transparência para com todos nossos clientes. Presamos honestidade do começo ao fim, acreditamos que sem ela não conseguíamos nem iniciar nossa empresa.
+            </p>
         </div>
 
     </div>
@@ -63,19 +70,18 @@
 </div>
 
     <div class="slide-carousel">
-        <span class="out"><h1>rafael</h1> <br> <p>sprinter</p></span>
-        <span class="out"><h1>donatelo</h1> <br> <p>michellangelo</p></span>
-        <span class="out"><h1>pink</h1> <br> <p>brain</p></span>
+        <span class="out"><h1>Lorem</h1> <br> <p>"ipsum"</p></span>
+        <span class="out"><h1>Dolor</h1> <br> <p>"sit"</p></span>
+        <span class="out"><h1>Amet</h1> <br> <p>"consectur"</p></span>
     </div>
 
 <!------------------------parte 5------------------------>
     <div class="content">    
-        <h1 class="op" id="equipe">Conheça nossa equipe</h1>
+        <h1 class="op" id="equipe">Nossa equipe</h1>
         <div class="equipe">
             <div class="grid">
                 <?php
                     $sql = mysqli_query($conn, "SELECT * FROM equipe");
-                    $exibe = mysqli_fetch_assoc($sql);
 
                     while($exibe = mysqli_fetch_assoc($sql)){
                         echo "
@@ -94,7 +100,19 @@
                 ?>
             </div>
         </div>
+
+<!------------------------parte 6------------------------>
+<h1>Envie-nos uma mensagem</h1>
+    <div class="form-contato">
+        <form action="submit" method="post">
+            <input type="text" name="nome" id="nome" placeholder="Nome..." required> <br>
+            <input type="email" name="email" id="email" placeholder="Email..." required> <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem..." style="resize: vertical;"></textarea> <br>
+            <input type="submit" name="submit" value="Enviar">
+        </form>
     </div>
+</div>
+
 <!------------------------parte 6------------------------>
     <div id="contato">
         <div class="space-grid enderecos">

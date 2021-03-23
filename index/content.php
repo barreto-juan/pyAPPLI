@@ -1,5 +1,18 @@
+<?php
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "db_site-empresa";
+
+    $con = mysqli_connect($host, $user, $pass, $db);
+?>
+
 <div class="content">
-<!------------------------parte 1------------------------>
+
+<!------------------------------------------------------->
+<!------------------------INICIO------------------------->
+<!------------------------------------------------------->
+
     <div id="home">
         
         <div class="texto">
@@ -16,13 +29,17 @@
         </div>
     
     </div>
-<!------------------------parte 2------------------------>
+
+<!------------------------------------------------------->
+<!-----------------------SERVICOS------------------------>
+<!------------------------------------------------------->
+
     <h1 class="op" id="servicos">Conheça nossos serviços 💻&#x1F527;</h1>
 
     <div class="servicos">
         <div class="grid">
             <?php
-                $sql = mysqli_query($conn, "SELECT * FROM servicos");
+                $sql = mysqli_query($con, "SELECT * FROM servicos");
 
                 while ($exibe = mysqli_fetch_assoc($sql)) {
                     echo "
@@ -40,7 +57,11 @@
         </div>
 
     </div>
-<!------------------------parte 3------------------------>
+
+<!------------------------------------------------------->
+<!-----------------------SOBRE NOS----------------------->
+<!------------------------------------------------------->
+
     <h1 class="op" id="sobrenos">Um pouco sobre nós</h1>
     <div class="sobrenos">
         <div class="foto">
@@ -53,19 +74,24 @@
             <h2>Missão</h2>
             <p>Existimos a fim de oferecer um serviço de qualidade com um preço acessível ao cliente!</p>
             <br>
+
             <h2>Visão</h2>
-            <p>Nossa visão trabalha em crescermos e oferecermos mais serviços, com uma qualidade superior e com um preço ainda mais acessível!</p>
+            <p>Visamos o crescimento e a oferta de mais serviços, com mais qualidade e com um preço ainda melhor!</p>
             <br>
+            
             <h2>Valores</h2>
             <p>
                 - Integridade; <br>
                 - Honestidade. <br>
-                Trabalhamos com integridade, buscamos a transparência para com todos nossos clientes. Presamos honestidade do começo ao fim, acreditamos que sem ela não conseguíamos nem iniciar nossa empresa.
+                Trabalhamos com integridade, buscamos a transparência para com nossos clientes. Presamos honestidade do começo ao fim, acreditamos que sem ela nem deveríamos criar nossa empresa.
             </p>
         </div>
 
     </div>
-<!------------------------parte 4------------------------>
+<!------------------------------------------------------->
+<!-----------------------CLIENTES------------------------>
+<!------------------------------------------------------->
+
     <h1 class="op" id="clientes">Opiniões de clientes</h1>
 </div>
 
@@ -75,13 +101,16 @@
         <span class="out"><h1>Amet</h1> <br> <p>"consectur"</p></span>
     </div>
 
-<!------------------------parte 5------------------------>
+<!------------------------------------------------------->
+<!------------------------EQUIPE------------------------->
+<!------------------------------------------------------->
+
     <div class="content">    
         <h1 class="op" id="equipe">Nossa equipe</h1>
         <div class="equipe">
             <div class="grid">
                 <?php
-                    $sql = mysqli_query($conn, "SELECT * FROM equipe");
+                    $sql = mysqli_query($con, "SELECT * FROM equipe");
 
                     while($exibe = mysqli_fetch_assoc($sql)){
                         echo "
@@ -100,10 +129,14 @@
                 ?>
             </div>
         </div>
+    </div>
 
-<!------------------------parte 6------------------------>
-<h1>Envie-nos uma mensagem</h1>
-    <div class="form-contato">
+<!------------------------------------------------------->
+<!----------------------FORMULARIO----------------------->
+<!------------------------------------------------------->
+
+    <div id="contact" class="form-contato">
+        <h1>Envie-nos uma mensagem</h1> <br>
         <form action="submit" method="post">
             <input type="text" name="nome" id="nome" placeholder="Nome..." required> <br>
             <input type="email" name="email" id="email" placeholder="Email..." required> <br>
@@ -111,9 +144,11 @@
             <input type="submit" name="submit" value="Enviar">
         </form>
     </div>
-</div>
 
-<!------------------------parte 6------------------------>
+<!------------------------------------------------------->
+<!------------------------RODAPE------------------------>
+<!------------------------------------------------------->
+
     <div id="contato">
         <div class="space-grid enderecos">
             <div class="local">

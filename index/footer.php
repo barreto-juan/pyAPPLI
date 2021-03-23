@@ -1,9 +1,5 @@
-<div class="footer">
-    
-    &copy; Copyright Jinfo
-
-</div>
-
-
+    <div class="footer">
+        &copy; Copyright Jinfo
+    </div>
 </body>
 </html>

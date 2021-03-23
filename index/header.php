@@ -32,18 +32,55 @@
         <span class="logo">
             Jinfo
         </span>
-        
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <hr class="lista">
-            <li><a href="#servicos">Serviços</a></li>
-            <hr class="lista">
-            <li><a href="#sobrenos">Sobre Nós</a></li>
-            <hr class="lista">
-            <li><a href="#equipe">Equipe</a></li>
-            <hr class="lista">
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+
+        <?php
+            if(isset($_GET['url'])){
+                $url = ($_GET['url']);
+                $url = array_filter(explode('/', $url));
+                //echo $url[0];
+                if($url[0] != "dashboard"){
+                    echo "
+                        <ul>
+                            <li><a href=\"#home\">Home</a></li>
+                            <hr class=\"lista\">
+
+                            <li><a href=\"#servicos\">Serviços</a></li>
+                            <hr class=\"lista\">
+                            
+                            <li><a href=\"#sobrenos\">Sobre Nós</a></li>
+                            <hr class=\"lista\">
+                            
+                            <li><a href=\"#equipe\">Equipe</a></li>
+                            <hr class=\"lista\">
+                            
+                            <li><a href=\"#contact\">Contato</a></li>
+                        </ul>
+                    ";
+                }else{
+                    echo "<h4>Bem-vindo, ".$_COOKIE['login']."!</h4>";
+                    echo "<span class=\"logout\"><a href=\"logout\">Sair</a></span>";
+                }
+                
+            }else{
+                echo "
+                        <ul>
+                            <li><a href=\"#home\">Home</a></li>
+                            <hr class=\"lista\">
+
+                            <li><a href=\"#servicos\">Serviços</a></li>
+                            <hr class=\"lista\">
+                            
+                            <li><a href=\"#sobrenos\">Sobre Nós</a></li>
+                            <hr class=\"lista\">
+                            
+                            <li><a href=\"#equipe\">Equipe</a></li>
+                            <hr class=\"lista\">
+                            
+                            <li><a href=\"#contact\">Contato</a></li>
+                        </ul>
+                    ";
+            }
+        ?>
     
     
     </nav>

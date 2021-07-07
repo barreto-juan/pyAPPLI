@@ -1,12 +1,3 @@
-<?php
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "db_site-empresa";
-
-    $con = mysqli_connect($host, $user, $pass, $db);
-?>
-
 <div class="content">
 
 <!------------------------------------------------------->
@@ -43,12 +34,12 @@
 
                 while ($exibe = mysqli_fetch_assoc($sql)) {
                     echo "
-                        <div class='service' id='s" .$exibe['id']. "'>
-                            <div class='titulo'>" .$exibe['nome']. "</div>
-                            <div class='descricao'>" .$exibe['descricao']. "</div>
+                        <div class='service' id='s" .$exibe["id"]. "'>
+                            <div class='titulo'>" .$exibe["nome"]. "</div>
+                            <div class='descricao'>" .$exibe["descricao"]. "</div>
                             <hr>
-                            <div class='preco'> R$ " . number_format($exibe['preco'], 2, ',', '.'). "</div>
-                            <button " .$exibe['disp']. ">Ver orçamento</button>
+                            <div class=\"preco\"> R$ " . number_format($exibe["preco"], 2, ",", "."). "</div>
+                            <button " .$exibe["disp"]. ">Ver orçamento</button>
                         </div>
                     ";
                 }
@@ -59,10 +50,23 @@
     </div>
 
 <!------------------------------------------------------->
+<!-----------------------CLIENTES------------------------>
+<!------------------------------------------------------->
+
+    <h1 class="op" id="clientes">Opiniões de clientes</h1>
+</div>
+
+    <div class="slide-carousel">
+        <span class="out"><h1>Lorem</h1> <br> <p>"ipsum"</p></span>
+        <span class="out"><h1>Dolor</h1> <br> <p>"sit"</p></span>
+        <span class="out"><h1>Amet</h1> <br> <p>"consectur"</p></span>
+    </div>
+
+<!------------------------------------------------------->
 <!-----------------------SOBRE NOS----------------------->
 <!------------------------------------------------------->
 
-    <h1 class="op" id="sobrenos">Um pouco sobre nós</h1>
+<h1 class="op" id="sobrenos">Um pouco sobre nós</h1>
     <div class="sobrenos">
         <div class="foto">
             <div class="img">
@@ -88,19 +92,7 @@
         </div>
 
     </div>
-<!------------------------------------------------------->
-<!-----------------------CLIENTES------------------------>
-<!------------------------------------------------------->
-
-    <h1 class="op" id="clientes">Opiniões de clientes</h1>
-</div>
-
-    <div class="slide-carousel">
-        <span class="out"><h1>Lorem</h1> <br> <p>"ipsum"</p></span>
-        <span class="out"><h1>Dolor</h1> <br> <p>"sit"</p></span>
-        <span class="out"><h1>Amet</h1> <br> <p>"consectur"</p></span>
-    </div>
-
+    
 <!------------------------------------------------------->
 <!------------------------EQUIPE------------------------->
 <!------------------------------------------------------->
@@ -114,13 +106,13 @@
 
                     while($exibe = mysqli_fetch_assoc($sql)){
                         echo "
-                            <div class='integrante' id='e" . $exibe['id'] . "'>
-                                <img src=\"" . $exibe['foto'] . "\"/>
+                            <div class=\"integrante\" id=\"e" . $exibe["id"] . "\">
+                                <img src=\"" . $exibe["foto"] . "\"/>
                                 
-                                <div class='section'>
-                                    <div class='nome'>" . $exibe['nome']. "</div>
+                                <div class=\"section\">
+                                    <div class=\"nome\">" . $exibe["nome"]. "</div>
                                     <hr>
-                                    <div class='cargo'>" . $exibe['cargo'] . "</div>
+                                    <div class=\"cargo\">" . $exibe["cargo"] . "</div>
                                 </div>
                             </div>
                         ";
@@ -153,7 +145,7 @@
         <div class="space-grid enderecos">
             <div class="local">
                 <div class="foto"><img src="img/local.png" alt="" style="width: 35px;"></div>
-                <div class="texto">Rua Jubiscleuda, 7070<br>Somewhere/AO</div>
+                <div class="texto">Rua Jubiscleuda, 7070<br>Somewhere/01</div>
             </div>
             <div class="whats">
                 <div class="foto"><img src="img/whatsapp.png" alt=""></div>

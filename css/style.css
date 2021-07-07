@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
 
     transition: all ease-in-out .4s;
 }
@@ -224,15 +225,19 @@ nav ul li a:hover{
 
     margin: 10px;
     padding: 10px;
-    border: 1px solid;
     border-radius: 20px;
+    border: 1px solid;
+
+    background-image: linear-gradient(90deg, orangered, 40%, yellow);
 }
 
 .equipe .integrante img{
     width: 100px;
     height: 100px;
-    border-radius: 0% 50%;
+    border-radius: 50%;
     margin-right: 10px;
+
+    border: 10px solid #fff;
 }
 
 .equipe .integrante .section{
@@ -289,6 +294,9 @@ nav ul li a:hover{
 
     padding: 20px;
     background-image: linear-gradient(45deg, #ec78b3, #a385e9);
+
+    font-weight: lighter;
+    font-size: 15px;
 }
 
 #contato a{
@@ -339,7 +347,7 @@ nav ul li a:hover{
 
     nav{
         margin-left: -100%;
-        height: 0vh;
+        height: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;

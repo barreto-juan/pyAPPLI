@@ -1,23 +1,21 @@
 <?php
 
-    //conexao
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "db_site-empresa";
-
-    $con = mysqli_connect($host, $user, $pass, $db);
-    //fim conexao
-
-
     if (isset($_POST['bt_login'])) {
-        $nome = addslashes($_POST['nome']);
-        $senha = addslashes($_POST['senha']);
+        if(!$_POST["nome"]){
+            echo "<script> alert(\"Login vazio!\")";
+        }if(!$_POST["senha"]){
+            echo "<script> alert(\"Senha vazio!\")";
+        }else{
+            $nome = addslashes($_POST["nome"]);
+            $senha = addslashes($_POST["senha"]);
+        }
 
-        $sql = mysqli_query($con, "SELECT nome, senha FROM acesso WHERE nome=\"$nome\" AND senha=\"$senha\" LIMIT 1");
+        $query = "SELECT nome, senha FROM acesso WHERE nome=\"$nome\" AND senha=\"$senha\" LIMIT 1";
+        $sql = $con->query($query) or die($con->error);
 
-        if (mysqli_num_rows($sql) <= 0) {
-            echo "<script> alert(\"Login e/ou senha incorreto(s)!\");window.location.href='http://localhost/site-empresa/index/login';</script>";
+        if (mysqli_num_rows($sql) == 0) {
+            echo "<script> alert(\"Login e/ou senha incorreto(s)!\") </script>";
+            
         }else{
             setcookie("login", $nome);
             echo "
@@ -27,25 +25,27 @@
                         <p>Você possui <h1>
                 
                         ";
-                                    $sql = mysqli_query($con, "SELECT * FROM mensagens WHERE lida = 0");
+                                    $query = "SELECT * FROM mensagens WHERE lida = 0";
+                                    $sql = $con->query($query) or die($con->error);
+
                                     $cont=0;
                                     while($exibe = mysqli_fetch_assoc($sql)){
                                         $cont+=1;
                                     }
                                     echo $cont;
-                        echo "
+                    echo "
                         </h1>
-                        mensagens não lidas!
+                            mensagens não lidas!
                         </p>
                     
                     </div>
                     <div class=\"contain-shop\">
-                        <h1>Vendas</h1>
-                        <p>suas vendas aparecerão aqui!</p>
+                        <h1>Pedidos</h1>
+                        <p>Suas vendas aparecerão aqui!</p>
                     </div>
                     
                     <div class=\"table-message\">
-                        <table border='1'>
+                        <table border=\"1\">
                             <tr>
                                 <td class=\"title-table\">
                                     Nome
@@ -62,28 +62,29 @@
                             </tr>
                             ";
 
-                            $sql = mysqli_query($con, "SELECT * FROM mensagens");
+                            $query = "SELECT * FROM mensagens";
+                            $sql = $con->query($query) or die($con->error);
 
                             while ($exibe = mysqli_fetch_assoc($sql)) {
                                 echo "
                                     <tr>
                                         <td>
-                                            ".$exibe['nome']."
+                                            ".$exibe["nome"]."
                                         </td>
                                         <td>
-                                            ".$exibe['email']."
+                                            ".$exibe["email"]."
                                         </td>
                                         <td>
-                                            ".$exibe['mensagem']."
+                                            ".$exibe["mensagem"]."
                                         </td>
                                         <td>
                                             <select>
                                                 <option>"; 
-                                                    if ($exibe['lida'] == 1){echo "Sim";}else{echo"Não";}
+                                                    if ($exibe["lida"] == 1){echo "Sim";}else{echo"Não";}
                                             echo "
                                                 </option>
                                                 ";
-                                                if ($exibe['lida'] == 0){echo"<option>Sim</option>";}
+                                                if ($exibe["lida"] == 0){echo"<option>Sim</option>";}
                                             echo"
                                             </select>
                                         </td>
@@ -105,7 +106,7 @@
 
 
     }else{
-        header("location:http://localhost/site-empresa/index/login");
+        header("Location: login");
     }
 
 

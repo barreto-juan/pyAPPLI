@@ -1,12 +1,9 @@
 <?php
-    $hhost = "localhost";
-    $user = "root";
+    $servidor = "localhost";
+	$usuario = "root";
+	$senha = "";
     $db = "db_site-empresa";
 
-    $con = mysqli_connect($host, $user);
+	$con = mysqli_connect($servidor, $usuario, $senha, $db);
 
-    if (!mysqli_select_db($con, $db)) {
-        echo "<pre>". $con->errno . ": " . $con->error. "</pre> </br>";
-        exit();
-    }
 ?>

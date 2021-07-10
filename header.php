@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,23 +37,19 @@
             if(isset($_GET['url'])){
                 $url = ($_GET['url']);
                 $url = array_filter(explode('/', $url));
-                //echo $url[0];
                 if($url[0] != "dashboard"){
                     echo "
                         <ul>
-                            <li><a href=\"#home\">Home</a></li>
+                            <li><a href=\"http://localhost/siteEmpresa/site-empresa/#home\">Home</a></li>
                             <hr class=\"lista\">
 
-                            <li><a href=\"#servicos\">Serviços</a></li>
+                            <li><a href=\"http://localhost/siteEmpresa/site-empresa/#servicos\">Serviços</a></li>
                             <hr class=\"lista\">
                             
-                            <li><a href=\"#sobrenos\">Sobre Nós</a></li>
+                            <li><a href=\"http://localhost/siteEmpresa/site-empresa/#sobrenos\">Sobre Nós</a></li>
                             <hr class=\"lista\">
                             
-                            <li><a href=\"#equipe\">Equipe</a></li>
-                            <hr class=\"lista\">
-                            
-                            <li><a href=\"#contact\">Contato</a></li>
+                            <li><a href=\"http://localhost/siteEmpresa/site-empresa/#contato\">Contato</a></li>
                         </ul>
                     ";
                 }else{
@@ -64,19 +60,16 @@
             }else{
                 echo "
                         <ul>
-                            <li><a href=\"#home\">Home</a></li>
+                            <li><a href=\"http://localhost/siteEmpresa/site-empresa/#home\">Home</a></li>
                             <hr class=\"lista\">
 
-                            <li><a href=\"#servicos\">Serviços</a></li>
+                            <li><a href=\"http://localhost/siteEmpresa/site-empresa/#servicos\">Serviços</a></li>
                             <hr class=\"lista\">
                             
-                            <li><a href=\"#sobrenos\">Sobre Nós</a></li>
+                            <li><a href=\"http://localhost/siteEmpresa/site-empresa/#sobrenos\">Sobre Nós</a></li>
                             <hr class=\"lista\">
                             
-                            <li><a href=\"#equipe\">Equipe</a></li>
-                            <hr class=\"lista\">
-                            
-                            <li><a href=\"#contact\">Contato</a></li>
+                            <li><a href=\"http://localhost/siteEmpresa/site-empresa/#contato\">Contato</a></li>
                         </ul>
                     ";
             }

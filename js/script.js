@@ -1,15 +1,19 @@
-$(function(){
-    $(".slide-carousel .out:eq(0)").addClass("ativo").show()
+window.onload = function(){
+    var txtTitulo = "Lorem ipsum dolor sir amet consectur.";
+    var txt1 = document.getElementById("titulo");
+    
+    var speed = 100;
+    var cont = 0;
 
-    setInterval(slide, 4000)
-
-    function slide() {
-        if($(".ativo").next().length){
-            $(".ativo").fadeOut().removeClass("ativo").next().fadeIn().addClass("ativo");
+    function typeWriter () {
+        if(cont < txtTitulo.length){
+            txt1.innerHTML += "<b>" + txtTitulo.charAt(cont) + "<b/>";
+            cont++;
+            setTimeout(typeWriter, speed);
         }else{
-            $(".ativo").fadeOut().removeClass("ativo");
-            $(".slide-carousel .out:eq(0)").fadeIn().addClass("ativo");
+            cont = 0;
         }
     }
 
-})
+    typeWriter();
+};

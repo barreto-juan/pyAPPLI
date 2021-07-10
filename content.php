@@ -3,13 +3,15 @@
     <!---------HOME----------->
     <!------------------------>
     <div id="home" class="home">
-        <div class="titulo">
-            <h1 id="titulo"></h1>
-        </div>
+        <div class="container-home">
+            <div class="titulo">
+                <h1 id="titulo"></h1>
+            </div>
 
-        <div class="imagem">
-            <img src="img/icone-site.png" alt="" class="logo-firma">
-        </div>    
+            <div class="imagem">
+                <img src="img/man-works-home-office.png" alt="" class="imagem-topo">
+            </div>
+        </div>
     </div>
 
     <!------------------------>
@@ -18,15 +20,9 @@
     <div id="servicos" class="servicos">
         <?php
             
-            $servidor = "localhost";
-            $usuario = "root";
-            $senha = "";
-            $db = "db_site-empresa";
-        
-            $con = mysqli_connect($servidor, $usuario, $senha, $db);
-        
-            $sql = mysqli_query($con, "SELECT * FROM servicos");
-            
+            $query = "SELECT * FROM servicos";
+            $sql = mysqli_query($con, $query);
+
             while($resultado = mysqli_fetch_assoc($sql)){
                 echo "
                 <div class=\"container-servicos\">
@@ -56,16 +52,9 @@
     <!------------------------>
     <div id="sobrenos" class="sobrenos">
     <?php
-            
-            $servidor = "localhost";
-            $usuario = "root";
-            $senha = "";
-            $db = "db_site-empresa";
-        
-            $con = mysqli_connect($servidor, $usuario, $senha, $db);
-        
-            $sql = mysqli_query($con, "SELECT * FROM equipe");
-            
+            $query = "SELECT * FROM equipe";
+            $sql = mysqli_query($con, $query);
+
             while($resultado = mysqli_fetch_assoc($sql)){
                 echo "
                 <div class=\"container-equipe\">

@@ -4,7 +4,7 @@
         $erros = "";
 
         if(!$_POST["nome"]){
-            $erros .= "Campo login vazio! <br>";
+            $erros .= "Campo nome vazio! <br>";
         }if(!$_POST["senha"]){
             $erros .= "Campo senha vazio! <br>";
         }else{
@@ -22,20 +22,20 @@
         $sql = $con->query($query) or die($con->error);
 
         if (mysqli_num_rows($sql) == 0) {
-            $erros .= "Login e/ou senha incorreto(s)! <br>";
+            $erros .= "Login incorreto! <br>";
         }else{
             setcookie("login", $nome);
         }
 
         if (strlen($erros) > 0) {
             echo $erros;
-            header("Location:login");
+            header("Location: login");
             exit();
         }
 
     }else{
         header("Location: login");
-        echo "Não foi possível acessar essa página!";
+        echo "Página restrita!";
         exit();
     }
 

@@ -1,5 +1,5 @@
 window.onload = function(){
-    var txtTitulo = "Lorem ipsum dolor sir amet consectur.";
+    var txtTitulo = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
     var txt1 = document.getElementById("titulo");
     
     var speed = 100;

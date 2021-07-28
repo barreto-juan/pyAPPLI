@@ -1,5 +1,5 @@
 <div class="form-login">
-    <form action="process" method="POST">
+    <form action="dashboard" method="POST">
         <label for="n">Nome</label><br>
         <input type="text" name="nome" id="n" class="nome" placeholder="Nome"><br>
 

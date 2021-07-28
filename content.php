@@ -19,7 +19,8 @@
     <!------------------------>
     <div id="servicos" class="servicos">
         <?php
-            
+        
+            global $con;
             $query = "SELECT * FROM servicos";
             $sql = mysqli_query($con, $query);
 
@@ -84,7 +85,7 @@
     <div id="contato" class="contato">
         <div class="container-contato">
             <div class="contain">
-                <h1>hello world</h1>
+                <h1>Hello, World!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, beatae. Praesentium aliquam cumque eum iusto libero, obcaecati dolore sint adipisci impedit esse!</p>
             </div>
                     

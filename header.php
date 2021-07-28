@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     
     <link rel="shortcut icon" href="img/icone-site2.png" type="image/x-icon">
 
@@ -37,6 +40,8 @@
         </span>
 
         <?php
+            session_start();
+
             if(isset($_GET['url'])){
                 $url = ($_GET['url']);
                 $url = array_filter(explode('/', $url));
@@ -56,7 +61,7 @@
                         </ul>
                     ";
                 }else{
-                    echo "<h4>Bem-vindo, ".$_COOKIE['login']."!</h4>";
+                    echo "<h4>Bem-vindo, ".$_SESSION["nome"]."!</h4>";
                     echo "<span class=\"logout\"><a href=\"logout\">Sair</a></span>";
                 }
                 

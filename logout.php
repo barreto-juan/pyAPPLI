@@ -1,6 +1,6 @@
 <?php
-    setcookie("login", "", time()-3600);
+    unset($_SESSION["nome"]);
 
-    header("Location: login");
+    header("location: login");
     exit();
 ?>

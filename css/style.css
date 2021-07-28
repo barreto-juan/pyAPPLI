@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Mr Robot';
+    src: url("../fonts/mr\ robot.ttf");
+}
+
 *{
     margin:0;
     padding: 0;
@@ -58,9 +63,10 @@ nav {
 }
 
 nav .logo{
+
+    font-family: 'Mr Robot';
     
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: #fff;
     margin: 0px 0px 0px 50px;
 }
@@ -96,14 +102,14 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: grey;
+    color: #808080;
 
     transition: all .4s;
 }
 
 #titulo:after{
- content: '|';
- margin-left: 5px;
+ content: '_';
+ margin-left: 2px;
  opacity: 1;
  animation: pisca .7s infinite;
 }
@@ -199,30 +205,25 @@ nav ul li a:hover{
     justify-content: space-around;
     align-items: center;
 
-    border-radius: 10px;
+    width: min-content;
 
     transition: all .4s;
-}
 
-.content #sobrenos .container-equipe:hover{
-    box-shadow: 0px 0px 10px #000;
-
-    transition: all .4s;
 }
 
 .content #sobrenos .container-equipe .integrante .imagem-integrante{
     margin: 0;
     padding: 8px;
 
-    height: 80px;
-    width: 80px;
+    height: 200px;
+    width: 200px;
 
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 6px 6px 0px #000 !important;
 }
 
 .content #sobrenos .container-equipe .sobre{
-    margin-left: 10px;
+    margin: 10px;
+    text-align: center;
 }
 
 .content #contato{
@@ -237,53 +238,53 @@ nav ul li a:hover{
 }
 
 .content #contato .container-contato .contain{
-    width: 45%;
+    width: 50%;
 }
 
 .content #contato .container-contato .form form{
-    margin: 0;
-    padding: 10px;
+    margin: 10px;
+    padding: 0;
 
     text-align: right;
 }
 
-.content #contato .container-contato .form form input{
-    height: 30px;
-}
+.content #contato .container-contato .form form #nome, #email, textarea{
+    margin: 5px 0px;
+    padding: 10px 15px;
 
-.content #contato .container-contato .form form input, textarea{
-    margin: 5px;
-    padding: 5px;
+    width: auto;
 
-    width: 200px;
+    font-family: 'Kanit';
+    font-size: 18px;
 
-    font-size: 15px;
-    font-style: italic;
-
-    border: 0;
-    border-radius: 4px;
+    border: 2px solid #000;
+    box-shadow: inset 6px 6px 0px #f1f1f1 !important;
 
     outline: 0;
 }
 
-.content #contato .container-contato .form form input:focus, textarea:focus{
-    box-shadow: 0px 0px 20px white;
-}
-
 .content #contato .container-contato .form form textarea{
-    width: 96%;
+    width: 94%;
     resize: none;
 }
 
 .content #contato .container-contato .form form .enviar{
     margin: 0 0 5px 0;
+    padding: 10px 15px;
 
     height: 50px;
 
     background-color: rgba(135, 206, 250,0.7);
     color: #000;
+
+    font-family: 'Kanit';
     font-size: 18px;
     font-weight: bold;
+
+
+    box-shadow: 0px 0px 0px;
+    border: 2px solid #000;
+    outline: 0;
 
     transition: all .4s;
 }
@@ -291,6 +292,9 @@ nav ul li a:hover{
 .content #contato .container-contato .form form .enviar:hover{
     background-color: transparent;
     color: #fff;
+
+    box-shadow: 6px 6px 0px #f1f1f1 !important;
+    border-color: #fff;
 
     cursor: pointer;
     transition: all .4s;
@@ -307,6 +311,9 @@ nav ul li a:hover{
 
 .footer .container-footer .logo-footer h1 {
     color: darkblue;
+    font-family: 'Mr Robot';
+    font-weight: lighter;
+    font-size: 50px;
 }
 
 .footer .container-footer .sociais .redes {
@@ -350,6 +357,46 @@ nav ul li a:hover{
     transition: all .4s;
 }
 
+.footer .link-topo{
+    float: right; 
+    margin: 5px;
+
+    width: 50px;
+    height: 50px;
+}
+
+.footer .link-topo a img{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+
+    transition: all .4s;
+}
+
+
+.footer .link-topo a img:hover{
+    box-shadow: 0px 0px 10px #000;
+
+    transition: all .4s;
+}
+
+.footer .footer-reg{
+    margin: 0;
+    padding: 10px;
+
+    width: 100%;
+
+    background-color: darkblue;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+
+    bottom: 0;
+    position: fixed;
+
+}
 
 
 @media(max-width: 850px){
